@@ -1,7 +1,7 @@
 #include <stdio.h>
 #include <string.h>
 
-/* tem alguma forma de fazer o programa parar estando dentro de uma outra função que não a main? posso fazer goto.  Tem alguma espécie de throw error*/
+/*tem alguma forma de fazer o programa parar estando dentro de uma outra função que não a main? posso fazer goto.  Tem alguma espécie de throw error*/
 
 /*
 Vou tentar colocar o tamanho pra ser um limitador e se chegarmos ao limite, o código terminou com êxito.
