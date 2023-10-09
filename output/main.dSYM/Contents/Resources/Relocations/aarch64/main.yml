@@ -2,12 +2,12 @@
 triple:          'arm64-apple-darwin'
 binary-path:     '/Users/gustavohorestee/Documents/TrabalhoCompiladores/Compiladores_profSebastiao_Atividade1/output/main'
 relocations:
-  - { offsetInCU: 0x26, offset: 0x26, size: 0x8, addend: 0x0, symName: _main, symObjAddr: 0x0, symBinAddr: 0x100003584, symSize: 0x184 }
-  - { offsetInCU: 0x41, offset: 0x41, size: 0x8, addend: 0x0, symName: _main, symObjAddr: 0x0, symBinAddr: 0x100003584, symSize: 0x184 }
-  - { offsetInCU: 0x93, offset: 0x93, size: 0x8, addend: 0x0, symName: _preencheComBarraN, symObjAddr: 0x184, symBinAddr: 0x100003708, symSize: 0x60 }
-  - { offsetInCU: 0xD3, offset: 0xD3, size: 0x8, addend: 0x0, symName: _q0, symObjAddr: 0x1E4, symBinAddr: 0x100003768, symSize: 0xE8 }
-  - { offsetInCU: 0x117, offset: 0x117, size: 0x8, addend: 0x0, symName: _tratementoError, symObjAddr: 0x2CC, symBinAddr: 0x100003850, symSize: 0x104 }
-  - { offsetInCU: 0x157, offset: 0x157, size: 0x8, addend: 0x0, symName: _verificaSeChegouAoFinal, symObjAddr: 0x3E0, symBinAddr: 0x100003964, symSize: 0x5C }
-  - { offsetInCU: 0x18D, offset: 0x18D, size: 0x8, addend: 0x0, symName: _q1, symObjAddr: 0x43C, symBinAddr: 0x1000039C0, symSize: 0xE8 }
-  - { offsetInCU: 0x1D1, offset: 0x1D1, size: 0x8, addend: 0x0, symName: _q2, symObjAddr: 0x524, symBinAddr: 0x100003AA8, symSize: 0x29C }
+  - { offsetInCU: 0x26, offset: 0x26, size: 0x8, addend: 0x0, symName: _main, symObjAddr: 0x0, symBinAddr: 0x100003578, symSize: 0x184 }
+  - { offsetInCU: 0x41, offset: 0x41, size: 0x8, addend: 0x0, symName: _main, symObjAddr: 0x0, symBinAddr: 0x100003578, symSize: 0x184 }
+  - { offsetInCU: 0x93, offset: 0x93, size: 0x8, addend: 0x0, symName: _preencheComBarraN, symObjAddr: 0x184, symBinAddr: 0x1000036FC, symSize: 0x60 }
+  - { offsetInCU: 0xD3, offset: 0xD3, size: 0x8, addend: 0x0, symName: _q0, symObjAddr: 0x1E4, symBinAddr: 0x10000375C, symSize: 0xE8 }
+  - { offsetInCU: 0x117, offset: 0x117, size: 0x8, addend: 0x0, symName: _tratementoError, symObjAddr: 0x2CC, symBinAddr: 0x100003844, symSize: 0x104 }
+  - { offsetInCU: 0x157, offset: 0x157, size: 0x8, addend: 0x0, symName: _verificaSeChegouAoFinal, symObjAddr: 0x3E0, symBinAddr: 0x100003958, symSize: 0x5C }
+  - { offsetInCU: 0x18D, offset: 0x18D, size: 0x8, addend: 0x0, symName: _q1, symObjAddr: 0x43C, symBinAddr: 0x1000039B4, symSize: 0xE8 }
+  - { offsetInCU: 0x1D1, offset: 0x1D1, size: 0x8, addend: 0x0, symName: _q2, symObjAddr: 0x524, symBinAddr: 0x100003A9C, symSize: 0x29C }
 ...

@@ -42,7 +42,7 @@ int main() {
     }
 
 
-    printf("Digite S para continuar ou N para encerrar: ");
+    printf("\nDigite S para continuar ou N para encerrar: ");
     fflush(stdin);
     scanf("%c", &resp);
 
@@ -59,7 +59,7 @@ int q0(char* str, int pos, int tam)
   if(verificaSeChegouAoFinal(pos, tam)){
   }
   else if(str[pos] >= 'A' && str[pos] <= 'Z'){
-   printf("Q0 <= str[%d] = %c\n", pos, str[pos]);
+   printf("Q0 <= str[%d] = '%c'\n", pos, str[pos]);
    pos++;
    q1(str, pos, tam);    
   }
@@ -74,7 +74,7 @@ int q1(char* str, int pos, int tam){
   }
 
   else if(str[pos] >= '0' && str[pos] <= '9'){
-    printf("Q1 <= str[%d] = %c\n", pos, str[pos]);
+    printf("Q1 <= str[%d] = '%c'\n", pos, str[pos]);
     pos++;
     q2(str, pos, tam);
   }
@@ -96,7 +96,7 @@ int q2(char* str, int pos, int tam){
   else if(eAlfabeticoMai || eAlfabeticoMin || eNumerico || eEspecialPermit){
     
     //Colocar a informação da posição e que é Alfanumérico ou pertencente aos simbolos especiais permitidos
-    printf("Q2 <= str[%d] = %c\n", pos, str[pos]);
+    printf("Q2 <= str[%d] = '%c'\n", pos, str[pos]);
     pos++;
     q2(str, pos, tam);
   }
@@ -128,19 +128,19 @@ void tratementoError(int error, char* str, int pos){
   switch (error)
   {
   case 0:
-    printf("ERRO: Q0 <= str[%d] = %c. A primeira posicao deve ser uma letra maiuscula\n", pos, str[pos]);
+    printf("ERRO: Q0 <= str[%d] = '%c'. A primeira posicao deve ser uma letra maiuscula\n", pos, str[pos]);
     break;
 
   case 1:
-    printf("ERRO: Q1 <= str[%d] = %c. A segunda posição deve ser um algarismo", pos, str[pos]);
+    printf("ERRO: Q1 <= str[%d] = '%c'. A segunda posição deve ser um algarismo\n", pos, str[pos]);
     break;
 
   case 2:
-    printf("ERRO: Q2 <= str[%d] = %c. Da terceira posicao em diante deve ser uma letra do alfabeto, um algarismo ou um dos simbolos '@', '*', '_', '-', '#'\n", pos, str[pos]);
+    printf("ERRO: Q2 <= str[%d] = '%c'. Da terceira posicao em diante deve ser uma letra do alfabeto, um algarismo ou um dos simbolos '@', '*', '_', '-', '#'\n", pos, str[pos]);
     break;
 
   case 3:
-    printf("Erro: cadeia de tamanho maior que 8");
+    printf("Erro: cadeia de tamanho maior que 8\n");
     break;
   
   }
