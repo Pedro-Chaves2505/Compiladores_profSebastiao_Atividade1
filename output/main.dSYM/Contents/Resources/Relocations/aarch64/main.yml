@@ -1,0 +1,13 @@
+---
+triple:          'arm64-apple-darwin'
+binary-path:     '/Users/gustavohorestee/Documents/TrabalhoCompiladores/Compiladores_profSebastiao_Atividade1/output/main'
+relocations:
+  - { offsetInCU: 0x26, offset: 0x26, size: 0x8, addend: 0x0, symName: _main, symObjAddr: 0x0, symBinAddr: 0x100003638, symSize: 0x11C }
+  - { offsetInCU: 0x41, offset: 0x41, size: 0x8, addend: 0x0, symName: _main, symObjAddr: 0x0, symBinAddr: 0x100003638, symSize: 0x11C }
+  - { offsetInCU: 0x77, offset: 0x77, size: 0x8, addend: 0x0, symName: _preencheComBarraN, symObjAddr: 0x11C, symBinAddr: 0x100003754, symSize: 0x60 }
+  - { offsetInCU: 0xB7, offset: 0xB7, size: 0x8, addend: 0x0, symName: _q0, symObjAddr: 0x17C, symBinAddr: 0x1000037B4, symSize: 0xE8 }
+  - { offsetInCU: 0xFB, offset: 0xFB, size: 0x8, addend: 0x0, symName: _tratementoError, symObjAddr: 0x264, symBinAddr: 0x10000389C, symSize: 0x104 }
+  - { offsetInCU: 0x13B, offset: 0x13B, size: 0x8, addend: 0x0, symName: _verificaSeChegouAoFinal, symObjAddr: 0x378, symBinAddr: 0x1000039B0, symSize: 0x5C }
+  - { offsetInCU: 0x171, offset: 0x171, size: 0x8, addend: 0x0, symName: _q1, symObjAddr: 0x3D4, symBinAddr: 0x100003A0C, symSize: 0xE8 }
+  - { offsetInCU: 0x1B5, offset: 0x1B5, size: 0x8, addend: 0x0, symName: _q2, symObjAddr: 0x4BC, symBinAddr: 0x100003AF4, symSize: 0x29C }
+...

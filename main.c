@@ -1,4 +1,5 @@
 #include <stdio.h>
+#include <stdlib.h>
 #include <string.h>
 
 
@@ -10,11 +11,14 @@ int q2(char* str, int pos, int tam);
 
 void preencheComBarraN(char* str, int tam);
 
+void tratementoError(int error, char* str, int pos);
 
 int verificaSeChegouAoFinal(int tam, int pos);
 
 int main() {
-
+  system("clear");
+  system("CLS");
+  
   char str[8] = {};
   
   preencheComBarraN(str, 8);
@@ -29,7 +33,7 @@ int tam_str = strlen(str);
   }
   else{
     //erro
-    printf("Erro: cadeia de tamanho maior que 8");
+    tratementoError(3, str, 0);
     return 1;
   }
 
@@ -46,7 +50,7 @@ int q0(char* str, int pos, int tam)
    q1(str, pos, tam);    
   }
   else{
-    printf("ERRO: Q0 <= str[%d] = %c. A primeira posicao deve ser uma letra maiuscula\n", pos, str[pos]);
+    tratementoError(0, str, pos);
   }
 }
 
@@ -61,7 +65,7 @@ int q1(char* str, int pos, int tam){
   }
 
   else{
-    printf("ERRO: Q1 <= str[%d] = %c. A segunda posição deve ser um algarismo", pos, str[pos]);
+    tratementoError(1, str, pos);
   }
 }
 
@@ -82,7 +86,7 @@ int q2(char* str, int pos, int tam){
     q2(str, pos, tam);
   }
   else{
-    printf("ERRO: Q2 <= str[%d] = %c. Da terceira posicao em diante deve ser uma letra do alfabeto, um algarismo ou um dos simbolos '@', '*', '_', '-', '#'\n", pos, str[pos]);
+    tratementoError(2, str, pos);
   }
 }
 
@@ -102,6 +106,28 @@ void preencheComBarraN(char* str, int tam){
   int i = 0;
   for(i=0; i<tam; i++){
     str[i] = '\n';
+  }
+}
+
+void tratementoError(int error, char* str, int pos){
+  switch (error)
+  {
+  case 0:
+    printf("ERRO: Q0 <= str[%d] = %c. A primeira posicao deve ser uma letra maiuscula\n", pos, str[pos]);
+    break;
+
+  case 1:
+    printf("ERRO: Q1 <= str[%d] = %c. A segunda posição deve ser um algarismo", pos, str[pos]);
+    break;
+
+  case 2:
+    printf("ERRO: Q2 <= str[%d] = %c. Da terceira posicao em diante deve ser uma letra do alfabeto, um algarismo ou um dos simbolos '@', '*', '_', '-', '#'\n", pos, str[pos]);
+    break;
+
+  case 3:
+    printf("Erro: cadeia de tamanho maior que 8");
+    break;
+  
   }
 }
 
