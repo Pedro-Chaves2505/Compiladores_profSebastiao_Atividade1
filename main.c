@@ -1,6 +1,7 @@
 #include <stdio.h>
 #include <stdlib.h>
 #include <string.h>
+#include <ctype.h>
 
 
 int q0(char* str, int pos, int tam);
@@ -22,20 +23,33 @@ int main() {
   char str[8] = {};
   
   preencheComBarraN(str, 8);
+
+  char resp = 's';
+  while (resp == 's')
+  {
+    printf("Digite a cadeia a ser testada pelo autômato: ");
+    scanf("%s", &str);
+
+    int tam_str = strlen(str);
   
-  printf("Digite a cadeia a ser testada pelo autômato: ");
-  scanf("%s", &str);
-int tam_str = strlen(str);
+    if(0 <= tam_str && tam_str<=8){
+      q0(str, 0, tam_str);   
+    }
+    else{
+      //erro
+      tratementoError(3, str, 0);
+      return 1;
+    }
+
+
+    printf("Digite S para continuar ou N para encerrar: ");
+    fflush(stdin);
+    scanf("%c", &resp);
+
+    resp = tolower(resp);
+  }
   
-  if(0 <= tam_str && tam_str<=8){
-    q0(str, 0, tam_str);
-        
-  }
-  else{
-    //erro
-    tratementoError(3, str, 0);
-    return 1;
-  }
+  
 
   return 0;
 }
@@ -50,6 +64,7 @@ int q0(char* str, int pos, int tam)
    q1(str, pos, tam);    
   }
   else{
+    //error
     tratementoError(0, str, pos);
   }
 }
