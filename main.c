@@ -1,3 +1,11 @@
+/*
+Pedro Carlos Chaves Silva - UC22102278 - Responsável
+
+Gustavo Horestee Santos Barros - UC22102459
+
+Jeferson Lopes Reis - UC22200711
+*/
+
 #include <stdio.h>
 #include <stdlib.h>
 #include <string.h>
